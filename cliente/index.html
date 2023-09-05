@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nomina UPC</title>
+  </head>
+  <body>
+
+    <nav class="nav">
+      <h1 class="tittle_payroll">Nómina UPC</h1>
+    </nav>
+
+    <main class="main_payroll">
+
+      <form action="" class="form_payroll" >
+        <input type="text" placeholder="Nombre" class="name" />
+        <input type="text" placeholder="Apellido" class="lastname" />
+        <input type="number" placeholder="CC" class="id" />
+
+        <label for="combobox">Seleccione la categoria del profesor</label>
+        <select name="select_category_payroll" id="combobox">
+          <option value="1" selected>Auxiliar tiempo completo</option>
+          <option value="2">Auxiliar medio tiempo</option>
+          <option value="3">Asistente tiempo completo</option>
+          <option value="4">Asistente medio tiempo</option>
+          <option value="5">Asociado tiempo completo</option>
+          <option value="6">Asociado medio tiempo</option>
+          <option value="7">Titular tiempo completo</option>
+          <option value="8">Titular medio tiempo</option>
+        </select>
+
+        <label for="combobox1">Seleccione la cualifiación del profesor </label>
+        <select name="select_qualification_payroll" id="combobox1">
+          <option value="1" selected>Especialización</option>
+          <option value="2">Maestría</option>
+          <option value="3">Doctorado</option>
+          <option value="4">Postdoctorado</option>
+        </select>
+
+        <label for="combobox2">Seleccione grupos y/o semillero </label>
+
+        <div class="checkbox-container">
+          <label for="" class="select_group">
+            <input type="checkbox" name="group1" id="group-1" value="1" /> A1
+          </label>
+
+          <label for="" class="select_group">
+            <input type="checkbox" name="group2" id="group-2" value="2" /> A
+          </label>
+
+          <label for="" class="select_group">
+            <input type="checkbox" name="group3" id="group-3" value="3" /> B
+          </label>
+
+          <label for="" class="select_group">
+            <input type="checkbox" name="group4" id="group-4" value="4" /> C
+          </label>
+
+          <label for="" class="select_">
+            <input type="checkbox" name="group5" id="group-5" value="5" />
+            Reconocidos por colciencias
+          </label>
+
+          <label for="" class="select_group">
+            <input type="checkbox" name="group6" id="group-6" value="6" />
+            Semillero
+          </label>
+        </div>
+
+      </form>
+     <div class="buttons">
+        <button class="add" id="addProfessor"> Agregar profesor </button>
+        <button class="calculate" id="calculate">Calcular nómina</button>
+     </div>
+     <label for=""class="totalPayroll">Nomina:</label>
+     <label for="" class="totalPayroll" id="totalPayroll"></label>
+     <!--Crear una tabla con id table-->
+     
+        <table class="table" id="table">
+        <thead>
+            <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>CC</th>
+            <th>Categoria</th>
+            <th>Calificación</th>
+            <th>Grupos</th>
+            <th>Salario</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+
+        <table class="table" id="table_2">
+          <thead>
+              <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>CC</th>
+              <th>Categoria</th>
+              <th>Calificación</th>
+              <th>Grupos</th>
+              <th>Salario</th>
+              </tr>
+          </thead>
+          <tbody id="tbody">
+          </tbody>
+
+
+        <button class="mostrar">
+          Mostrar empleados
+        </button>
+       <label for="" id="total"  class="total"></label>
+
+    </main>
+   
+      
+    <script src="./nomina.js"></script>
+  </body>
+</html>
