@@ -1,10 +1,11 @@
 # Nómina UPC
 
-![Alt text](image.png)
+![!\[Alt text\](image.png)](cliente/image.png)
 
 Este es un proyecto de Nómina para la UPC (Universidad Popular del Cesar). Permite gestionar la información de los profesores y calcular la nómina de manera sencilla.
 
 ## Instrucciones
+
 Formulario: Aquí se deben llenar los campos obligatorios para agregar un profesor.
 
 Nombre: Nombre del profesor.

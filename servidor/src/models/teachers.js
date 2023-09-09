@@ -22,6 +22,9 @@ const teacherSchema = new Schema({
   ],
   SMMLV: {
     type: Number
+  },
+  type: {
+    type: String
   }
 
 }, {

@@ -19,8 +19,18 @@
         <input type="text" placeholder="Apellido" class="lastname" />
         <input type="number" placeholder="CC" class="id" />
 
-        <label for="combobox">Seleccione la categoria del profesor</label>
-        <select name="select_category_payroll" id="combobox">
+        <label for="combobox0">Seleccione el tipo de profesor </label>
+        <select name="select_qualification_payroll" id="combobox0">
+          <option value="1" selected>Ocasional</option>
+          <option value="2">Catedratico</option>
+        </select>
+
+         
+        <input type="number" placeholder="Cantidad de horas" class="horas hidden" />
+        <input type="number" placeholder="Valor hora" class="valor_hora hidden" />
+
+        <label class="select_category_payroll_label" for="combobox">Seleccione la categoria del profesor</label>
+        <select name="select_category_payroll" class="select_category_payroll" id="combobox">
           <option value="1" selected>Auxiliar tiempo completo</option>
           <option value="2">Auxiliar medio tiempo</option>
           <option value="3">Asistente tiempo completo</option>
@@ -78,35 +88,44 @@
      <label for="" class="totalPayroll" id="totalPayroll"></label>
      <!--Crear una tabla con id table-->
      
-        <table class="table" id="table">
+     <div class="tableform">
+      <table class="table" id="table">
         <thead>
             <tr>
             <th>Nombre</th>
             <th>Apellido</th>
-            <th>CC</th>
+            <th>Cedula de ciudanía</th>
             <th>Categoria</th>
             <th>Calificación</th>
             <th>Grupos</th>
             <th>Salario</th>
+            <th>Tipo profesor</th>
             </tr>
         </thead>
         <tbody id="tbody">
         </tbody>
-
+      </table>
+     </div>
+      
+      <div class="tableform">
         <table class="table" id="table_2">
           <thead>
               <tr>
               <th>Nombre</th>
               <th>Apellido</th>
-              <th>CC</th>
+              <th>Cedula de ciudanía</th>
               <th>Categoria</th>
               <th>Calificación</th>
               <th>Grupos</th>
               <th>Salario</th>
-              </tr>
+            <th>Tipo profesor</th>
+                
+            </tr>
           </thead>
           <tbody id="tbody">
           </tbody>
+        </table>
+      </div>
 
 
         <button class="mostrar">
